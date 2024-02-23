@@ -7,6 +7,7 @@ class Home extends BaseController
     public $facebook=NULL;
 	public $fb_helper=NULL;
 	function __construct(){
+		
 		require_once APPPATH. 'Libraries/vendor/autoload.php';
 		$this->facebook =  new \Facebook\Facebook([
 			'app_id'  => '',
